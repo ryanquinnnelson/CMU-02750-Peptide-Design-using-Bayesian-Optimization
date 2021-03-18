@@ -1,0 +1,4 @@
+category,learner,query_strategy,kernel,length_scale,nu,n_learners,n_initial,n_queries,r2
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45),0.45,-1,20,20,100,-12.718785948570135
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45),0.45,-1,20,40,100,0.3916371064900652
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45),0.45,-1,20,80,100,0.5346764926419783
