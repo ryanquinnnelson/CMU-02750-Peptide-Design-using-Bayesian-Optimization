@@ -47,3 +47,5 @@ Committee,Gaussian Process,max_std_sampling,RBF(length_scale=4.98),4.97777777777
 Committee,Gaussian Process,max_std_sampling,RBF(length_scale=5.02),5.022222222222222,"(0.01, 1000.0)",10,80,100,0.5275277231350549
 Committee,Gaussian Process,max_std_sampling,RBF(length_scale=5.07),5.066666666666666,"(0.01, 1000.0)",10,80,100,0.5339664518490485
 Committee,Gaussian Process,max_std_sampling,RBF(length_scale=5.11),5.111111111111111,"(0.01, 1000.0)",10,80,100,0.5262488496080567
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=5.16),5.155555555555556,"(0.01, 1000.0)",10,80,100,0.547654348102742
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=5.2),5.2,"(0.01, 1000.0)",10,80,100,0.519790802818362
