@@ -1,0 +1,8 @@
+category,learner,query_strategy,kernel,length_scale,length_scale_bounds,n_learners,n_initial,n_queries,r2
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=1e-10),1e-10,"(1e-05, 100000.0)",10,80,100,-14.42578134563042
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=1e-05),1e-05,"(1e-05, 100000.0)",10,80,100,-14.42578134563042
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.01),0.01,"(1e-05, 100000.0)",10,80,100,-14.42578134563042
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.1),0.1,"(1e-05, 100000.0)",10,80,100,-14.42578134563042
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=1),1,"(1e-05, 100000.0)",10,80,100,0.5344300129224617
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=10),10.0,"(1e-05, 100000.0)",10,80,100,-11.4989903995809
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=100),100,"(1e-05, 100000.0)",10,80,100,-14.42578134563042

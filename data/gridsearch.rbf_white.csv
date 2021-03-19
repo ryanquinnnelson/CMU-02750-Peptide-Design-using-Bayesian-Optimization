@@ -8,3 +8,8 @@ Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45) + WhiteKernel
 Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45) + WhiteKernel(noise_level=0.988),0.45,0.9875101206450075,10,80,100,0.368277918887125
 Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45) + WhiteKernel(noise_level=0.21),0.45,0.2100423456083671,10,80,100,0.3940890496961523
 Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45) + WhiteKernel(noise_level=0.43),0.45,0.429735983053284,10,80,100,0.03690711817931802
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45) + WhiteKernel(noise_level=0.118),0.45,0.1176990075519728,10,80,100,0.3893046829979574
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45) + WhiteKernel(noise_level=0.122),0.45,0.12208248522440904,10,80,100,0.19808383840592292
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45) + WhiteKernel(noise_level=0.965),0.45,0.965286089686403,10,80,100,0.38685143306598946
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45) + WhiteKernel(noise_level=0.722),0.45,0.7215801736812868,10,80,100,0.18637404236521515
+Committee,Gaussian Process,max_std_sampling,RBF(length_scale=0.45) + WhiteKernel(noise_level=0.647),0.45,0.6465626421637516,10,80,100,0.37294017005718927
