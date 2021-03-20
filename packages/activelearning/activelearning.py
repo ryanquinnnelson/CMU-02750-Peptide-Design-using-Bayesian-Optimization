@@ -62,7 +62,7 @@ def run_and_score_active_learner_regression(learner, X_pool, y_pool, X_test, y_t
         # score learner
         r2 = score_regression_model(learner, X_test, y_test)
         history.append(r2)
-    
+
     return history
 
 
