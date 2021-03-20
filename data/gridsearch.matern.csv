@@ -170,3 +170,10 @@ pre-id,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=5, nu=1.
 pre-id,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=0.644, nu=1.5)",0.644444444,1.5,10,80,100,0.524567228
 pre-id,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=0.644, nu=1.5)",0.644444444,1.5,10,80,200,0.548114221
 pre-id,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=0.644, nu=2.5)",0.644444444,2.5,10,80,200,0.559886707
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=1e-10, nu=1.5)",1.00E-10,1.5,10,80,100,-14.42578135
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=1e-05, nu=1.5)",1.00E-05,1.5,10,80,100,-14.42578135
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=0.01, nu=1.5)",0.01,1.5,10,80,100,-14.42578135
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=0.1, nu=1.5)",0.1,1.5,10,80,100,-14.42578135
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=1, nu=1.5)",1,1.5,10,80,100,0.496843032
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=10, nu=1.5)",10,1.5,10,80,100,0.513822873
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=100, nu=1.5)",100,1.5,10,80,100,-14.42578135
