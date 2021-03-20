@@ -1,0 +1,8 @@
+experiment,category,learner,query_strategy,kernel,length_scale,nu,n_learners,n_initial,n_queries,r2
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=1e-10, nu=1.5)",1e-10,1.5,10,80,100,-14.42578134563042
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=1e-05, nu=1.5)",1e-05,1.5,10,80,100,-14.42578134563042
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=0.01, nu=1.5)",0.01,1.5,10,80,100,-14.42578134563042
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=0.1, nu=1.5)",0.1,1.5,10,80,100,-14.425781345497308
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=1, nu=1.5)",1,1.5,10,80,100,0.49684303192875323
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=10, nu=1.5)",10.0,1.5,10,80,100,0.5138228734175305
+3_11,Committee,Gaussian Process,max_std_sampling,"Matern(length_scale=100, nu=1.5)",100,1.5,10,80,100,-14.42578134563042
