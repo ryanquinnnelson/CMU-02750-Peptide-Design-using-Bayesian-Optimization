@@ -2,6 +2,7 @@
 Helper functions to perform active learning with modAL learners.
 """
 import numpy as np
+import csv
 from modAL.models import ActiveLearner, CommitteeRegressor
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.metrics import r2_score
@@ -9,7 +10,6 @@ from modAL.disagreement import max_std_sampling
 
 
 def get_next_sample(learner, X, y):
-
     # call the query strategy defined in the learner to obtain a new sample
     query_idx, query_sample = learner.query(X)
 
@@ -26,10 +26,8 @@ def get_next_sample(learner, X, y):
 
 
 def run_active_learner_regression(learner, X_pool, y_pool, n_queries):
-
     # perform active learning
     for q in range(n_queries):
-
         # get sample
         X_sample, y_sample, query_idx = get_next_sample(learner, X_pool, y_pool)
 
@@ -41,8 +39,34 @@ def run_active_learner_regression(learner, X_pool, y_pool, n_queries):
         y_pool = np.delete(y_pool, query_idx)
 
 
-def build_committee(kernel, n_learner, n_initial, X_pool, y_pool, seed):
+def run_and_score_active_learner_regression(learner, X_pool, y_pool, X_test, y_test, n_queries):
 
+    history = []
+
+    # score before starting
+    r2 = score_regression_model(learner, X_test, y_test)
+    history.append(r2)
+
+    # perform active learning
+    for q in range(n_queries):
+        # get sample
+        X_sample, y_sample, query_idx = get_next_sample(learner, X_pool, y_pool)
+
+        # use new sample to update the model
+        learner.teach(X_sample, y_sample)
+
+        # remove labeled instance from pool
+        X_pool = np.delete(X_pool, query_idx, axis=0)
+        y_pool = np.delete(y_pool, query_idx)
+
+        # score learner
+        r2 = score_regression_model(learner, X_test, y_test)
+        history.append(r2)
+    
+    return history
+
+
+def build_committee(kernel, n_learner, n_initial, X_pool, y_pool, seed):
     # get initial training set for each learner
     initial_idx = []
     for i in range(n_learner):
