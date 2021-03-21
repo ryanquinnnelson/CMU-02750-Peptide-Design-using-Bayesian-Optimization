@@ -7,7 +7,6 @@ from modAL.models import ActiveLearner, CommitteeRegressor
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.metrics import r2_score
 from modAL.disagreement import max_std_sampling
-from modAL.uncertainty import margin_sampling
 
 
 # provided wrapper class
