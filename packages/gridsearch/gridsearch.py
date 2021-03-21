@@ -120,7 +120,7 @@ def grid_search_1(kernels, n_learners, n_initials, X_pool, y_pool, X_test, y_tes
 def grid_search_2(n_estimators, max_depths, n_initials, X_pool, y_pool, X_test, y_test, n_queries,
                   seed, filename, fields, row_prefix):
     """
-    Grid search over (kernels, n_learners, n_initials) using active learning.
+    Grid search over (n_estimators, max_depths, n_initials) using active learning.
     Uses Random Forest Regressor for active learner.
     Appends results to file after each run combination. Experiment can be halted at any time without losing results.
 
