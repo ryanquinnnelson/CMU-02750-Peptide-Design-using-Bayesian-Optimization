@@ -130,3 +130,9 @@ dmypy.json
 
 # mac-generated
 .DS_Store
+
+# pycharm
+.idea/
+
+# Excel temporary
+~$*.xls*
